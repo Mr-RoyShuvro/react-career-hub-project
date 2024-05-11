@@ -4,13 +4,13 @@ import { Link } from "react-router-dom";
 
 
 
-const AppliedJob = ({ job }) => {
+const AppliedJob = ({ job}) => {
 
     const { id, logo, job_title, company_name, remote_or_onsite, job_type, salary, location } = job;
 
     return (
-        <div className=" card-compact bg-base-100 shadow-xl px-5 flex gap-5 p-12 justify-center">
-            <figure><img className="w-40 h-32" src={logo} alt="Shoes" /></figure>
+        <div className=" card-compact bg-base-100 shadow-xl px-5 flex gap-5 p-12 justify-center items-center">
+            <figure><img className="" src={logo} alt="Shoes" /></figure>
             <div className="flex-grow">
                 <h2 className="card-title py-5">{job_title}</h2>
                 <p className="pb-5">{company_name}</p>

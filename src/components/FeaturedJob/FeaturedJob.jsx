@@ -6,8 +6,8 @@ import { Link } from "react-router-dom";
 const FeaturedJob = ({ job }) => {
     const {id, logo, job_title, company_name, remote_or_onsite, location, job_type, salary } = job;
     return (
-        <div className=" card-compact bg-base-100 shadow-xl px-5">
-            <figure><img className="w-40 h-32" src={logo} alt="Shoes" /></figure>
+        <div className=" card-compact bg-base-100 shadow-xl px-5 py-10">
+            <figure><img className="py-10" src={logo} alt="Shoes" /></figure>
             <div className="">
                 <h2 className="card-title py-5">{job_title}</h2>
                 <p className="pb-5">{company_name}</p>
